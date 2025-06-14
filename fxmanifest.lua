@@ -1,18 +1,10 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Mac0360'
-discord 'Mac0360'
+author 'Mac Development'
+description 'Restrict certain ped models to specific players'
 version '1.0.0'
 
-shared_script {
-  "config.lua"
-}
-
-client_scripts { 
-  "client.lua"
-}
-
-server_scripts {
-  "server.lua"
-}
+client_script 'client/main.lua'
+server_script 'server/server.lua'
+shared_script 'shared/config.lua'
